@@ -3958,11 +3958,7 @@ begin
   if(!cpurst_b) begin
     dcsr_cause     <= 3'b0;
     dcsr_v         <= 1'b0;
-<<<<<<< HEAD
     dcsr_prv       <= 2'b11; // M-Mode
-=======
-    dcsr_prv       <= 2'b11; //M-Mode
->>>>>>> e867ce6bd7156b4a8de2dcafa5b49678dd9629bb
   end else if(dcsr_local_en) begin
     dcsr_cause     <= iui_regs_src0[8:6];
     dcsr_v         <= iui_regs_src0[5];
